@@ -1,0 +1,22 @@
+[[bin]]
+name = "mining"
+path = "src/mining.rs"
+
+[[bench]]
+name = "benmark"
+harness = false
+
+[package]
+name = "mining"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rayon = "1.5.0"
+chashmap = "~2.2"
+reqwest = "0.10.9"
+tokio = { version = "0.2", features = ["full"] }
+zip = "0.5"
+itertools = "0.9.0"
+error-chain = "0.12.4"
+criterion = "0.3.3"
